@@ -13,7 +13,6 @@ import com.myh.red.envelope.arithmetic.IRedPacketArithmetic;
  * @author myh
  * @date 2019/11/19
  * @copyright copyright (c) 2019
- * @company www.duia.com
  */
 public class RedPacketArithmetic implements IRedPacketArithmetic {
 

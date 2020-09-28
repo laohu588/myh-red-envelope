@@ -8,7 +8,6 @@ import java.util.List;
  * @author myh
  * @date 2019/11/19
  * @copyright copyright (c) 2019
- * @company www.duia.com
  */
 public interface IRedPacketArithmetic {
 
