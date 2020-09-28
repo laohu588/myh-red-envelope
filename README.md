@@ -4,22 +4,29 @@
 如下示例：
 
 ```xml
-###### 建立用户、活动、与通道之间的关系缓存的位置;
+# 建立用户、活动、与通道之间的关系缓存的位置;
 spring.common.redis.objectName=redis-redpackage
 spring.common.redis.database=0
 
-###### 抢红包A通道操作;
+# 抢红包A通道操作;
 spring.channela.redis.objectName=redis-redpackage
 spring.channela.redis.database=1
 
-###### 抢红包B通道操作;
+## 抢红包B通道操作;
 spring.channelb.redis.objectName=redis-redpackage
 spring.channelb.redis.database=2
 ```
 
 ..............也可以配置多个通道。
 
+备注说明：
+
+Lock对象：lockA、lockB
+RedisTemplate对象：channelARedisTemplate、channelBRedisTemplate
+
+
 ##### 2、为保证并发所导致的数据不一致问题，需要使用分布式加锁;
+
 
 
 ##### 3、个人实现的设计思想梳理：
