@@ -1,19 +1,14 @@
 package com.myh.red.envelope.core;
 
+import com.myh.red.envelope.constant.ChannelEnum;
+import org.springframework.data.redis.core.RedisTemplate;
+
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import org.springframework.data.redis.core.RedisTemplate;
-
-import com.myh.red.envelope.constant.ChannelEnum;
-
 /**
  * 通过红包通道序号，获取指定的通过redisTemplate
- * 
- * @author myh
- *
  */
-@SuppressWarnings("rawtypes")
 public class RedisTemplateFactory {
 
 	private static Map<String, RedisTemplate> channel = new ConcurrentHashMap<String, RedisTemplate>();

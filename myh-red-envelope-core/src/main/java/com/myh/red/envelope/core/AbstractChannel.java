@@ -1,11 +1,10 @@
 package com.myh.red.envelope.core;
 
-import java.util.List;
-import java.util.Map;
-
+import com.myh.zookeeper.lock.abstracts.Lock;
 import org.springframework.data.redis.core.RedisTemplate;
 
-import com.myh.zookeeper.lock.abstracts.Lock;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 红包抽象业务处理;
@@ -30,7 +29,7 @@ public abstract class AbstractChannel {
     public abstract void robotRobRedPackage(String bigHbId);
 
     /**
-          * 检查某一个用户，对某一场活动是否抢过红包。
+     * 检查某一个用户，对某一场活动是否抢过红包。
      * @param redisTemplate
      * @param userId
      * @param redActivityId

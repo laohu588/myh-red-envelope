@@ -1,16 +1,14 @@
 package com.myh.red.envelope.core;
 
+import com.myh.red.envelope.constant.RedPackageCacheEnum;
+import com.myh.red.envelope.constant.RedPacketConstants;
+import com.myh.red.envelope.constant.RobRedPackageStatusEnum;
+import org.springframework.data.redis.core.RedisTemplate;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.springframework.data.redis.core.RedisTemplate;
-
-import com.myh.red.envelope.constant.RedPackageCacheEnum;
-import com.myh.red.envelope.constant.RedPacketConstants;
-import com.myh.red.envelope.constant.RobRedPackageStatusEnum;
-
-@SuppressWarnings({"rawtypes", "unchecked"})
 public class ChannelExecuteUtils {
 
     // A、添加原始红包部分小红包(单条),未抢的红包队列;

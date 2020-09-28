@@ -2,7 +2,8 @@ package com.myh.red.envelope.constant;
 
 public enum ChannelEnum {
 
-	A("A", "1"), B("B", "2");
+	A("A", "1"),
+	B("B", "2");
 
 	/**
 	 * 通道名称;

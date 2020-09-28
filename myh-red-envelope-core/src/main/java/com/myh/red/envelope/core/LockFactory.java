@@ -1,16 +1,14 @@
 package com.myh.red.envelope.core;
 
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-
 import com.myh.red.envelope.constant.ChannelEnum;
 import com.myh.zookeeper.lock.abstracts.Lock;
 
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
 /**
  * 通过红包通道序号，获取指定的锁对象;
- * 
  * @author myh
- *
  */
 public class LockFactory {
 
