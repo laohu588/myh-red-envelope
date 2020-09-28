@@ -12,7 +12,7 @@ import com.myh.red.envelope.core.ChannelExecuteUtils;
 import com.myh.zookeeper.lock.abstracts.Lock;
 
 /**
- * 通道A实现抢红包操作;
+ *   通道实现抢红包操作;
  * 
  * @author myh
  * @date 2019/11/18

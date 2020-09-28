@@ -20,3 +20,6 @@ spring.channelb.redis.database=2
 
 # 2、为保证并发所导致的数据不一致问题，需要使用分布式加锁;
 
+
+# 3、个人实现的设计思想梳理：
+http://note.youdao.com/noteshare?id=8b83aeec540cbe8e246fb3c56a67f085&sub=9012DAA609824AD89F5B01EA03924853
