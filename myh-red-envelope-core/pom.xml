@@ -32,6 +32,13 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-redis</artifactId>
 		</dependency>
+		
+		<!-- 集成分布式加锁依赖 -->
+		<dependency>
+			<groupId>com.myh.plugin</groupId>
+			<artifactId>spring-boot-zookeeper-lock</artifactId>
+			<version>1.0.0</version>
+		</dependency>
 
 	</dependencies>
 
