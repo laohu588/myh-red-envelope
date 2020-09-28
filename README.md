@@ -1,17 +1,17 @@
 
-#1、需要多套redis实例,举例：如果抢红包通道希望是两个通道，就需要跟两个redis实例建立连接，使用同样的库号
+# 1、需要多套redis实例,举例：如果抢红包通道希望是两个通道，就需要跟两个redis实例建立连接，使用同样的库号
 
 如下示例：
 
-#建立用户、活动、与通道之间的关系缓存的位置;
+## 建立用户、活动、与通道之间的关系缓存的位置;
 spring.common.redis.objectName=redis-redpackage
 spring.common.redis.database=0
 
-##抢红包A通道操作;
+## 抢红包A通道操作;
 spring.channela.redis.objectName=redis-redpackage
 spring.channela.redis.database=1
 
-##抢红包B通道操作;
+## 抢红包B通道操作;
 spring.channelb.redis.objectName=redis-redpackage
 spring.channelb.redis.database=2
 
